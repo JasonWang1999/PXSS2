@@ -20,11 +20,15 @@
     <![endif]-->
 
     <style>
-		#navbar-menu{color: white}
-		#navbar-menu ul li:hover{background: #E94F4D}
+		#navbar-menu{
+			color: white;
+		}
+		#navbar-menu ul li:hover{
+			background: #E94F4D;
+		}
 		@media (max-width: 991px) {
    #dh {
-        height: 210px;
+        height: 252px;
     }
 }
 		#bq{
@@ -49,6 +53,16 @@
 
 
 <body>
+<!--悬浮窗-->
+<div class="cbl" id="cbl1" style="position:fixed;top:40%;right: 0px;z-index: 999">
+	<a href="http://wpa.qq.com/msgrd?v=3&uin=3501258646&site=qq&menu=yes">
+		<img src="../images/icon1.png" style="float:left">
+	</a>
+	<br>
+	<a href="../files/jrwm.html#ly">
+		<img src="../images/icon2.png" style="float:left;margin-top: 20px">
+	</a>
+</div>
 <!-- 顶部导航 -->
 <nav class="navbar navbar-inverse navbar-fixed dark no-background bootsnav" >
 
@@ -83,9 +97,10 @@
                 <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp" id="dh" style="font-weight: 100;font-family: '苹方 细体';font-size: 16px">
                     <li><a href="../index.html">首页</a></li>
                     <li><a href="../files/jrwm.html">加入我们</a></li>
+                    <li><a href="../files/pxjz.html">咆哮家族</a></li>
                     <li><a href="../files/mdfb.html">门店分布</a></li>
                     <li><a href="../files/sszx.html">实时资讯</a></li>
-                    <li><a href="../files/pxjz.html">留言咨询</a></li>
+                    <li><a href="../files/jrwm.html#ly">留言咨询</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>   
