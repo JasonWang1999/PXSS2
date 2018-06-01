@@ -11,6 +11,7 @@
 	<link href="../fonts/FontAwesome/font-awesome.css" rel="stylesheet">
 	<link href="../css/animate.css" rel="stylesheet">
 	<link href="../css/bootsnav.css" rel="stylesheet">
+	
 	<link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css">
 	<link href="../css/overwrite.css" rel="stylesheet">
             <link href="../css/style.css" rel="stylesheet">
@@ -23,14 +24,26 @@
 		#navbar-menu{
 			color: white;
 		}
-		#navbar-menu ul li:hover{
-			background: #E94F4D;
+		#navbar-menu ul li{
+			font-family: '苹方 细体';
+			font-size: 16px;
+		}
+		#navbar-menu ul li a{
+			font-weight:100;
+		}
+		#navbar-menu ul li:hover {
+			background-color: #E94F4D;
+		}
+		#dh li ul li a{
+			
+			color:#FFFFFF;
 		}
 		@media (max-width: 991px) {
-   #dh {
-        height: 252px;
-    }
+		   #dh {	
+				height: 252px;
+			}
 }
+
 		#bq{
 			background:#0a0705;
 			color: white;
@@ -40,6 +53,7 @@
 			font-size: 16px;
 			line-height: 28px
 		}
+		
 		#bq h4{
 			color:white;
 			font-weight:800;
@@ -88,19 +102,49 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand" href="#brand"><img src="../images/logo_03.png" class="logo" alt=""></a>
+              <a class="navbar-brand" href="../index.html"><img src="../images/logo_03.png" class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp" id="dh" style="font-weight: 100;font-family: '苹方 细体';font-size: 16px">
+                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp" id="dh">
                     <li><a href="../index.html">首页</a></li>
-                    <li><a href="jrwm.html">加入我们</a></li>
-                    <li><a href="pxjz.html">咆哮家族</a></li>
-                    <li><a href="mdfb.html">门店分布</a></li>
-                    <li><a href="sszx.html">实时资讯</a></li>
-                    <li><a href="jrwm.html#ly">服务热线 400-060-5268</a></li>
+                    <li class="dropdown">
+                        <a href="jrwm.html"  class="dropdown-toggle" data-toggle="dropdown">加入我们</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="jrwm.html#ly">品牌合作</a></li>
+                            <li><a href="jrwm.html#ppld">品牌亮点</a></li>
+                            <li><a href="jrwm.html#cpmd">产品卖点</a></li>
+                            <li><a href="jrwm.html#cpzb">包装周边</a></li>
+      
+                            <li><a href="jrwm.html#xmys">项目优势</a></li>
+                            <li><a href="jrwm.html#zslc">招商流程</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="pxjz.html" class="dropdown-toggle" data-toggle="dropdown" >咆哮家族</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="pxjz.html#qs">汽水系列</a></li>
+                            <li><a href="pxjz.html#tp">甜品系列</a></li>
+                      </ul>
+                  </li>
+                    <li class="dropdown">
+                      <a href="mdfb.html" class="dropdown-toggle" data-toggle="dropdown" >门店分布</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="mdfb.html#mdzs">门店展示</a></li>
+                            <li><a href="mdfb.html#mdfb">门店分布</a></li>
+                      </ul>
+                  </li>
+                    <li class="dropdown">
+                        <a href="sszx.html" class="dropdown-toggle" data-toggle="dropdown" >实时资讯</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="sszx.html#sszx">最新资讯</a></li>
+                            <li><a href="sszx.html#zxhd">最新活动</a></li>
+                        </ul>
+                  </li>
+                    <li><a href="jrwm.html#ly"  class="dropdown-toggle" data-toggle="dropdown">留言咨询</a></li>
+                    <li id="rx" ><a href="#" style="cursor: default">服务热线 400-060-5268</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>   
@@ -129,16 +173,19 @@
 		font-family:"PMingLiU";
 		color: white;
 		font-weight: 200;
-		text-align: center
+		text-align: center;
+		font-size: 22px
 	}
 	.thumbnail p{
 		font-family:"宋体";
 		color:hsla(0,0%,100%,0.19);
-		font-size: 21px
+		font-size: 18px;
+		padding: 0px 7px;
 	}
 </style>
 <div class="row" style="background: url(../images/sszx1.png) ">
 	<div class="row">
+	<a name="sszx"></a>
 		<img src="../images/sszx3.png" class="img-responsive center-block">
 	</div>
 	<div class="row ">
@@ -147,17 +194,17 @@
 		<div class="col-xs-5"></div>
 			<div class="col-xs-7" style="background-color:hsla(20,26%,7%,0.88);padding:80px 50px 
 										 50px 50px; margin: 0px">
-			<h1 style="font-family: Didot;font-size: 26.8px">LATERST INFORMATION</h1>
-				<h1 style="font-family: PMingLiU ;color: white;font-size: 35px;font-weight: 300">最新资讯</h1>
-				<p style="font-family: '宋体';color:#bbbab9;font-size: 20px;line-height: 35px">来自美国20年代的老汽水。以美国咆哮时代为背景的文化复刻，分析市场，洞察用户。以老汽水为主打产品，抓住年轻人的“发声”的需求，让每个人都在大时代中找到自己的位置。品牌所表现出的文化态度：咆哮是我们对抗平庸的声音。</p>
+			<h1 style="font-family: Didot;font-size: 24px">LATERST INFORMATION</h1>
+				<h1 style="font-family: PMingLiU ;color: white;font-size: 32px;font-weight: 300">最新资讯</h1>
+				<p style="font-family: '宋体';color:#bbbab9;font-size: 18px;line-height: 35px">来自美国20年代的老汽水。以美国咆哮时代为背景的文化复刻，分析市场，洞察用户。以老汽水为主打产品，抓住年轻人的“发声”的需求，让每个人都在大时代中找到自己的位置。品牌所表现出的文化态度：咆哮是我们对抗平庸的声音。</p>
 	          <a href="xwym.html">
-		        <button style="background-color: transparent;border: 1px solid #e8504d; color: #e8504d;font-size: 20px;padding: 10px 30px;font-family: '.萍方-简' ;font-weight: 200">查看详情</button>
+		        <button style="background-color: transparent;border: 1px solid #e8504d; color: #e8504d;font-size: 18px;padding: 10px 30px;font-family: '.萍方-简' ;font-weight: 200">查看详情</button>
             </a>			</div>
 		</div>
 		<div class="col-md-3 col-sm-1"></div>
 	</div>
 </div>
-<div class="row" style="background: url(../images/sszx2.png)">
+<div class="row" style="background: url(../images/sszx2.png)"><a name="zxhd"></a>
 	<div class="row">
 		<img src="../images/sszx7.png"  class="img-responsive center-block">
 	</div>
@@ -250,6 +297,14 @@
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/bootsnav.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+	  $(document).ready(function(){
+		  $("#rx").mouseover(function(){
+			  $("#rx").css("background-color","transparent")
+		  })
+		  
+	  })
+	
+	</script>
 </body>
 <!-- InstanceEnd --></html>
